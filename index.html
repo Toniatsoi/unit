@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>CSS Units, Colors, and Background Image</title>
+
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+
+        <link href="css/bootstrap-icons.css" rel="stylesheet">
+
+        <link href="css/templatemo-tiya-golf-club.css" rel="stylesheet">
+
+  <style>
+
+    body{
+      background-color: gray;
+    }
+    /* CSS Units */
+    .container {
+      width: 500px;
+      height: 300px;
+      margin: 20px;
+      padding: 10px;
+      border: 2px solid red;
+    }
+    
+    .absolute {
+      position: absolute;
+      top: 50px;
+      left: 100px;
+    }
+    
+    .relative {
+      position: relative;
+      top: -20px;
+      left: -50px;
+    }
+    
+    /* CSS Colors */
+    .color-box {
+      width: 50px;
+      height: 50px;
+      margin: 10px;
+      float: left;
+    }
+    
+    /* Background Image */
+    .background {
+      background-image: url('image1.jpg'), url('image2.jpg');
+      background-position: left top, right bottom;
+      background-size: 200px, cover;
+      background-repeat: no-repeat, repeat;
+      background-attachment: scroll, fixed;
+      background-color: rgba(255, 0, 0, 0.5);
+    }
+    
+    .background-opacity {
+      opacity: 0.7;
+    }
+    
+    .background-overlay {
+      position: relative;
+    }
+    
+    .overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.5);
+    }
+  </style>
+</head>
+<body>
+
+  <div style="position: absolute; right: 1; left: 90%; margin-top: 2%;" class="d-none d-lg-block ms-lg-3">
+                            <a class="btn custom-btn custom-border-btn" data-bs-toggle="offcanvas" href="../activities/index.html" role="button" aria-controls="offcanvasExample">Home</a>
+                        </div>
+  <!-- CSS Units -->
+  <br>
+  <br>
+  <br>
+  <div class="container">
+    <div class="absolute">Absolute Positioning</div>
+    <div class="relative">Relative Positioning</div>
+  </div>
+  
+  <!-- CSS Colors -->
+  <div class="color-box" style="background-color: red;"></div>
+  <div class="color-box" style="background-color: #00ff00;"></div>
+  <div class="color-box" style="background-color: gray;"></div>
+  <div class="color-box" style="background-color: rgb(0, 0, 255);"></div>
+  <div class="color-box" style="background-color: hsl(240, 100%, 50%);"></div>
+  <div class="color-box" style="background-color: hwb(240, 0%, 0%);"></div>
+  <div class="color-box" style="background-color: currentcolor;"></div>
+  <div class="color-box" style="background: linear-gradient(to bottom, red, yellow);"></div>
+  
+  <!-- Background Image -->
+  <div class="background">
+    <h2>Background Image</h2>
+    <p>This is a background image example.</p>
+  </div>
+  
+  <div class="background background-opacity">
+    <h2>Background Image with Opacity</h2>
+    <p>This is a background image with opacity.</p>
+  </div>
+  
+  <div class="background background-overlay">
+    <h2>Background Image with Overlay</h2>
+    <div class="overlay"></div>
+    <p>This is a background image with overlay.</p>
+  </div>
+</body>
+</html>
